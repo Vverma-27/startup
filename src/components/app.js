@@ -14,7 +14,7 @@ const App = () => {
         </Switch>
         {/* <div style={{ height: "10000px" }}></div> */}
       </Router>
-      {/* <div style={{ height: "1000px" }}></div> */}
+      <div style={{ height: "1000px" }}></div>
     </div>
   );
 };
