@@ -1,0 +1,40 @@
+.founders-container {
+  /* height: 100%; */
+  width: 100%;
+  text-align: center;
+  padding: 5rem 2rem;
+  background-image: linear-gradient(to right bottom, #ff7979, #4834d4);
+}
+
+.flex__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column wrap;
+  padding: 3.5rem 1rem;
+}
+
+.heading__founders {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  display: inline-block;
+  border-radius: 2rem;
+  transition: all 0.5s ease;
+  box-shadow: 0.2rem 0.7rem 1rem rgb(0 0 0 / 20%);
+}
+.heading__founders.founders {
+  color: #30336b;
+  background-image: linear-gradient(to right bottom, #f6e58d, #f0932b);
+}
+.heading__founders.teachers {
+  color: #1e3799;
+  background-image: linear-gradient(to right bottom, #82ccdd, #079992);
+}
+
+.heading__founders:hover {
+  transform: scale(0.99);
+  box-shadow: 0.5rem 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}

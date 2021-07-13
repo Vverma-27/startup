@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 6px;
+}
+#root {
+  height: 100%;
+}
+/* Navbar CSS */
+header.ui.secondary.pointing.menu {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  transition: background-color 0.5s ease;
+  z-index: 1000;
+  background-color: #353839;
+  height: 7rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/* Navbar width, margin, padding */
+.contain {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Width, alignment, border, height for navbar */
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.2);
+  transition: height 0.5s ease;
+}
+
+/* Navbar links styling */
+header.ui.menu .nav a.item {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.nav .logo {
+  height: 75%;
+}
+
+/*Apply styles after scroll*/
+header.ui.secondary.pointing.menu.scrolling-active {
+  background-color: #fff;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+  height: 5rem;
+  /* position: fixed; */
+}
+
+header.ui.menu.scrolling-active .nav a.item {
+  color: #313131;
+}
