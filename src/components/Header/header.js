@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./headerStyle.css";
 
 const Header = () => {
@@ -16,9 +17,13 @@ const Header = () => {
   return (
     <header ref={headerRef} class="ui secondary pointing menu">
       <nav className="nav">
-        <img src="" alt="Logo" className="logo" />
+        <Link to="/" className="logo">
+          <img src="" alt="Logo" />
+        </Link>
         <div class="right menu">
-          <a class="item">Home</a>
+          <Link to="/founders" class="item">
+            Founders
+          </Link>
           <a class="item">Messages</a>
           <a class="item">Friends</a>
           <a class="ui item">Logout</a>
