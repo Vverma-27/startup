@@ -73,3 +73,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # startup
 >>>>>>> 61345da4caef5712cdc58869ed33c1320bb56271
 "# startup" 
+"# trial" 
