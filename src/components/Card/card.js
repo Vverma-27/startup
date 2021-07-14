@@ -18,7 +18,7 @@ const Card = ({ data, num }) => {
       if (didScroll.current) return;
       CardRef.current.classList.toggle("not-in-view", !isInViewport());
       didScroll.current = true;
-      setTimeout(() => (didScroll.current = false), 650);
+      setTimeout(() => (didScroll.current = false), 600);
     };
     scrollFunc();
     window.addEventListener("scroll", scrollFunc);
