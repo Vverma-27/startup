@@ -2,8 +2,8 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 22rem;
-  width: 22rem;
+  height: 38.5rem;
+  width: 30rem;
   color: #fff;
   margin: 1rem 1rem 0 0;
   margin-bottom: 5rem;
@@ -44,32 +44,38 @@
   transform: rotateY(0);
 }
 .box__image {
-  height: 20rem;
+  height: 35rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-blend-mode: screen;
 }
-.image--1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-    url("https://images.unsplash.com/photo-1427830228531-ccf2652188b7");
+.image--Vihaan {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 185, 0, 0.7),
+      rgba(255, 119, 48, 0.7)
+    ),
+    url("../../images/founder-image__Vihaan.jpeg");
 }
-.image--2 {
+.image--Suyash,
+.image--Vivek {
   background-image: linear-gradient(to right, #7ed56f, #28b485),
     url("https://images.unsplash.com/photo-1427830228531-ccf2652188b7");
 }
-.image--3 {
+.image--Ananya,
+.image--Poonam {
   background-image: linear-gradient(to right bottom, #299bff, #5634fa),
     url("https://images.unsplash.com/photo-1427830228531-ccf2652188b7");
 }
 .box__heading {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 300;
   /* color: #777; */
   text-transform: uppercase;
   position: absolute;
-  top: 55%;
+  top: 65%;
   width: 70%;
   right: 1rem;
   text-align: right;

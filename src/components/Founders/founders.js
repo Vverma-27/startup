@@ -20,7 +20,7 @@ const Founders = () => {
     ],
   };
   const dataAnanya = {
-    name: "Ananya",
+    name: "Ananya Mukherjee",
     achievments: [
       "Likes Web Development and playing sports",
       "Built the business model",

@@ -13,7 +13,9 @@ const Card = ({ data, num }) => {
   return (
     <section class="box" id={`card--${num}`}>
       <section class="box__side front">
-        <section class={`box__image image--${num}`}>&nbsp;</section>
+        <section class={`box__image image--${name.split(" ")[0]}`}>
+          &nbsp;
+        </section>
         <h3 class="box__heading">
           <span className={`box__heading-span span--${num}`}>{name}</span>
         </h3>
