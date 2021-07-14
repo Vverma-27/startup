@@ -7,8 +7,9 @@ html {
 }
 /* Navbar CSS */
 header.ui.secondary.pointing.menu {
+  padding: 0 15px;
+  position: fixed;
   width: 100%;
-  position: sticky;
   top: 0;
   left: 0;
   font-size: 2rem;
@@ -35,7 +36,6 @@ header.ui.secondary.pointing.menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.2);
   transition: height 0.5s ease;
 }
 
@@ -51,12 +51,10 @@ header.ui.menu .nav a.item {
   height: 75%;
 }
 
-/*Apply styles after scroll*/
 header.ui.secondary.pointing.menu.scrolling-active {
   background-color: #fff;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
   height: 5rem;
-  /* position: fixed; */
 }
 
 header.ui.menu.scrolling-active .nav a.item {

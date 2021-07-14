@@ -45,18 +45,20 @@ const Founders = () => {
   };
   return (
     <section className="founders-container">
-      <h3 className="heading__founders founders">Founders Of Book-Shala</h3>
-      <section className="flex__cards">
-        <Card data={dataVihaan} num={"1"} />
-        <Card data={dataSuyash} num={"2"} />
-        <Card data={dataAnanya} num={"3"} />
-      </section>
-      <h3 className="heading__founders teachers">
-        Teacher Incharges Of Book-Shala
-      </h3>
-      <section className="flex__cards">
-        <Card data={dataPoonam} num={"1"} />
-        <Card data={dataVivek} num={"2"} />
+      <section style={{ marginTop: "10rem" }}>
+        <h3 className="heading__founders founders">Founders Of Book-Shala</h3>
+        <section className="flex__cards">
+          <Card data={dataVihaan} num={"1"} />
+          <Card data={dataSuyash} num={"2"} />
+          <Card data={dataAnanya} num={"3"} />
+        </section>
+        <h3 className="heading__founders teachers">
+          Teacher Incharges Of Book-Shala
+        </h3>
+        <section className="flex__cards">
+          <Card data={dataPoonam} num={"1"} />
+          <Card data={dataVivek} num={"2"} />
+        </section>
       </section>
     </section>
   );

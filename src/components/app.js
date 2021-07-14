@@ -22,7 +22,7 @@ const App = () => {
         <Switch>
           <Route path={"/founders"} exact component={() => <Founders />} />
         </Switch>
-        {/* <div style={{ height: "10000px" }}></div> */}
+        <div style={{ height: "10000px" }}></div>
       </Router>
     </div>
   );

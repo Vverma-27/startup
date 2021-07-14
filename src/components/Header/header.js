@@ -5,7 +5,8 @@ import "./headerStyle.css";
 const Header = () => {
   const headerRef = useRef(null);
   const scrollFunc = () => {
-    let windowPosition = window.scrollY > 10;
+    let scrollBarPosition = window.pageYOffset | document.body.scrollTop;
+    let windowPosition = scrollBarPosition > 50;
     headerRef.current.classList.toggle("scrolling-active", windowPosition);
   };
   useEffect(() => {
