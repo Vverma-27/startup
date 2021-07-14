@@ -3,7 +3,7 @@
   width: 100%;
   text-align: center;
   padding: 5rem 2rem;
-  background-image: linear-gradient(to right bottom, #ff7979, #4834d4);
+  /* background-image: linear-gradient(to right bottom, #ff7979, #4834d4); */
 }
 
 .flex__cards {
