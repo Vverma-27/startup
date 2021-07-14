@@ -17,10 +17,10 @@ const Header = () => {
   }, []);
   return (
     <header ref={headerRef} class="ui secondary pointing menu">
+      <Link to="/" className="logo">
+        <img src="" alt="Logo" />
+      </Link>
       <nav className="nav">
-        <Link to="/" className="logo">
-          <img src="" alt="Logo" />
-        </Link>
         <div class="right menu">
           <Link to="/founders" class="item">
             Founders
