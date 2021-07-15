@@ -23,7 +23,7 @@ const App = () => {
   const header = !(width > 425) ? <SmallHeader /> : <Header />;
 
   useEffect(() => {
-    setTimeout(() => hideLoader(), 300);
+    setTimeout(() => hideLoader(), 1000);
   }, []);
   return (
     <section style={{ height: "100%" }}>

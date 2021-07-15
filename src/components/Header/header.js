@@ -1,25 +1,14 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../images/Atheneum_logo.png";
 import "./headerStyle.css";
 
 const Header = () => {
-  const headerRef = useRef(null);
-  const scrollFunc = () => {
-    let scrollBarPosition = window.pageYOffset | document.body.scrollTop;
-    let windowPosition = scrollBarPosition > 50;
-    headerRef.current.classList.toggle("scrolling-active", windowPosition);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", scrollFunc);
-    return () => {
-      window.removeEventListener("scroll", scrollFunc);
-    };
-  }, []);
   return (
-    <header ref={headerRef} class="ui secondary pointing menu">
+    <header class="ui secondary pointing menu">
       <nav className="navLarge">
         <Link to="/" className="logo">
-          <img src="" alt="Logo" />
+          <img src={Logo} alt="Logo" height="20px" />
         </Link>
         <div class="right menu">
           <Link to="/founders" class="item">
@@ -33,6 +22,9 @@ const Header = () => {
           </Link>
           <Link to="/Features" class="item">
             Features
+          </Link>
+          <Link to="/customer-analysis" class="item">
+            Customer Analysis
           </Link>
           {/* <a class="item">Messages</a>
           <a class="item">Friends</a>

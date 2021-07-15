@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../images/Atheneum_logo.png";
 
 const HeaderSmall = () => {
   const inputRef = useRef(null);
@@ -22,8 +23,8 @@ const HeaderSmall = () => {
           }}
         >
           <li>
-            <Link to="/">
-              <img src="" alt="Logo" class="logo item" />
+            <Link to="/" class="logo">
+              <img src={Logo} alt="Logo" class="item" />
             </Link>
           </li>
           <li>
