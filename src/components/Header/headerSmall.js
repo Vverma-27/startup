@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const HeaderSmall = () => {
+  const inputRef = useRef(null);
   return (
     <header>
       <input
+        ref={inputRef}
         class="menu-icon"
         type="checkbox"
         id="menu-icon"
@@ -12,10 +14,16 @@ const HeaderSmall = () => {
       />
       <label for="menu-icon"></label>
       <nav class="nav">
-        <ul class="pt-5">
+        <ul
+          class="pt-5"
+          onClick={(e) => {
+            if (e.target.classList.contains("item") && inputRef.current.checked)
+              inputRef.current.checked = false;
+          }}
+        >
           <li>
-            <Link to="/" className="logo">
-              <img src="" alt="Logo" />
+            <Link to="/">
+              <img src="" alt="Logo" class="logo item" />
             </Link>
           </li>
           <li>
