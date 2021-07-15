@@ -18,24 +18,17 @@ const Card = ({ data, num }) => {
     const scrollFunc = () => {
       CardRef.current.classList.toggle("not-in-view", !isInViewport());
     };
+    const throttledFunc = _.throttle(scrollFunc, 550, {
+      trailing: true,
+      leading: true,
+    });
     scrollFunc();
-    window.addEventListener(
-      "scroll",
-      _.throttle(scrollFunc, 550, { trailing: true, leading: true })
-    );
-    window.addEventListener(
-      "resize",
-      _.throttle(scrollFunc, 550, { trailing: true, leading: true })
-    );
+    window.addEventListener("scroll", throttledFunc);
+    window.addEventListener("resize", throttledFunc);
     return () => {
-      window.removeEventListener(
-        "scroll",
-        _.throttle(scrollFunc, 550, { trailing: true, leading: true })
-      );
-      window.removeEventListener(
-        "resize",
-        _.throttle(scrollFunc, 550, { trailing: true, leading: true })
-      );
+      console.log("hello i was removed");
+      window.removeEventListener("scroll", throttledFunc);
+      window.removeEventListener("resize", throttledFunc);
     };
   }, []);
   const renderedAchievments = achievments.map((e) => {

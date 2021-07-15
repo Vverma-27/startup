@@ -23,14 +23,14 @@ const App = () => {
   const header = !(width > 425) ? <SmallHeader /> : <Header />;
 
   useEffect(() => {
-    const id = setTimeout(() => hideLoader(), 300);
+    setTimeout(() => hideLoader(), 300);
   }, []);
   return (
     <section style={{ height: "100%" }}>
       <Router>
         {header}
 
-        <section style={{ marginTop: "10rem", padding: "5rem 2rem" }}>
+        <section style={{ marginTop: "5rem", padding: "10rem 2rem" }}>
           <Switch>
             <Route path={"/"} exact component={() => <Home />} />
             <Route path={"/founders"} exact component={() => <Founders />} />
