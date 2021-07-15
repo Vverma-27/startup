@@ -77,7 +77,7 @@ header.ui.menu.secondary .navLarge a.item {
 }
 
 header.ui.secondary.pointing.menu .navLarge a.item:hover {
-  background-color: rgba(53, 56, 57, 1);
+  background-color: #3effe387;
   color: #fff;
   border-bottom: 2px solid #fff;
   transform: scale(1.1);
