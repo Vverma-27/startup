@@ -1,29 +1,41 @@
 import React, { useRef, useEffect } from "react";
+import _ from "lodash";
 import "./cardStyle.css";
 
 const Card = ({ data, num }) => {
   const { name, achievments } = data;
   const CardRef = useRef(null);
-  const didScroll = useRef(false);
+  // const didScroll = useRef(false);
   useEffect(() => {
     function isInViewport() {
       const rect = CardRef.current.getBoundingClientRect();
       return (
-        rect.top >= 0 &&
-        rect.bottom <=
+        rect.top + rect.height / 2 >= 0 &&
+        rect.bottom - rect.height / 2 <=
           (window.innerHeight || document.documentElement.clientHeight)
       );
     }
     const scrollFunc = () => {
-      if (didScroll.current) return;
       CardRef.current.classList.toggle("not-in-view", !isInViewport());
-      didScroll.current = true;
-      setTimeout(() => (didScroll.current = false), 600);
     };
     scrollFunc();
-    window.addEventListener("scroll", scrollFunc);
+    window.addEventListener(
+      "scroll",
+      _.throttle(scrollFunc, 550, { trailing: true, leading: true })
+    );
+    window.addEventListener(
+      "resize",
+      _.throttle(scrollFunc, 550, { trailing: true, leading: true })
+    );
     return () => {
-      window.removeEventListener("scroll", scrollFunc);
+      window.removeEventListener(
+        "scroll",
+        _.throttle(scrollFunc, 550, { trailing: true, leading: true })
+      );
+      window.removeEventListener(
+        "resize",
+        _.throttle(scrollFunc, 550, { trailing: true, leading: true })
+      );
     };
   }, []);
   const renderedAchievments = achievments.map((e) => {
