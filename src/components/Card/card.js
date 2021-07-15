@@ -26,7 +26,6 @@ const Card = ({ data, num }) => {
     window.addEventListener("scroll", throttledFunc);
     window.addEventListener("resize", throttledFunc);
     return () => {
-      console.log("hello i was removed");
       window.removeEventListener("scroll", throttledFunc);
       window.removeEventListener("resize", throttledFunc);
     };
