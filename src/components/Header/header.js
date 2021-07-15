@@ -25,9 +25,18 @@ const Header = () => {
           <Link to="/founders" class="item">
             Founders
           </Link>
-          <a class="item">Messages</a>
+          <Link to="/functionality" class="item">
+            functionality
+          </Link>
+          <Link to="/business-plan" class="item">
+            business plan
+          </Link>
+          <Link to="/Features" class="item">
+            Features
+          </Link>
+          {/* <a class="item">Messages</a>
           <a class="item">Friends</a>
-          <a class="item">Logout</a>
+          <a class="item">Logout</a> */}
         </div>
       </nav>
     </header>
