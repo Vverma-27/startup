@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
 html {
   scroll-behavior: smooth;
-  font-size: 6px;
+  font-size: 5px;
 }
 
 body {
@@ -63,6 +63,8 @@ header.ui.secondary.pointing.menu {
 
 /* navLargebar links styling */
 header.ui.menu.secondary .navLarge a.item {
+  /* display: inline-block; */
+  position: relative;
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -76,10 +78,29 @@ header.ui.menu.secondary .navLarge a.item {
   transform: scale(0.85);
 }
 
+header.ui.menu.secondary .navLarge a.item::after {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  height: 2px;
+  background: #fff;
+  transition: width 0.5s;
+  border: none;
+  margin: none;
+  transform: none;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  visibility: visible !important;
+}
+header.ui.secondary.pointing.menu .navLarge a.item:hover::after {
+  border-bottom: 2px solid #fff;
+  width: 100%;
+}
 header.ui.secondary.pointing.menu .navLarge a.item:hover {
   background-color: #3effe387;
   color: #fff;
-  border-bottom: 2px solid #fff;
   transform: scale(1.1);
 }
 
