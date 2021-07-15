@@ -7,6 +7,7 @@ import BusinessPlan from "./BusinessPlan/businessPlan";
 import Features from "./Features/features";
 import Header from "./Header/header";
 import SmallHeader from "./Header/headerSmall";
+import Footer from "./Footer/footer";
 import "./responsive.css";
 
 const App = () => {
@@ -47,6 +48,7 @@ const App = () => {
             />
           </Switch>
         </section>
+        <Footer />
         {/* <section style={{ height: "10000px" }}></section> */}
       </Router>
     </section>

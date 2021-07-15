@@ -1,0 +1,28 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #031424;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.footer__information,
+.footer__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.footer .footer__information > *,
+.footer .footer__icons > * {
+  margin-right: 1.2rem;
+}
+.footer .footer__information > i,
+.footer .footer__icons > i {
+  cursor: pointer;
+}
