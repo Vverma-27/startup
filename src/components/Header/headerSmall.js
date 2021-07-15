@@ -47,6 +47,11 @@ const HeaderSmall = () => {
               Features
             </Link>
           </li>
+          <li>
+            <Link to="/customer-analysis" class="item">
+              Customer Analysis
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
