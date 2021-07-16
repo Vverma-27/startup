@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/startup/static/css/main.dc6ba19e.chunk.css",
-    "main.js": "/startup/static/js/main.56245477.chunk.js",
-    "main.js.map": "/startup/static/js/main.56245477.chunk.js.map",
+    "main.css": "/startup/static/css/main.7f5eb9ac.chunk.css",
+    "main.js": "/startup/static/js/main.2440eb17.chunk.js",
+    "main.js.map": "/startup/static/js/main.2440eb17.chunk.js.map",
     "runtime-main.js": "/startup/static/js/runtime-main.f6f5972a.js",
     "runtime-main.js.map": "/startup/static/js/runtime-main.f6f5972a.js.map",
     "static/js/2.627a907f.chunk.js": "/startup/static/js/2.627a907f.chunk.js",
     "static/js/2.627a907f.chunk.js.map": "/startup/static/js/2.627a907f.chunk.js.map",
     "index.html": "/startup/index.html",
-    "static/css/main.dc6ba19e.chunk.css.map": "/startup/static/css/main.dc6ba19e.chunk.css.map",
+    "static/css/main.7f5eb9ac.chunk.css.map": "/startup/static/css/main.7f5eb9ac.chunk.css.map",
     "static/js/2.627a907f.chunk.js.LICENSE.txt": "/startup/static/js/2.627a907f.chunk.js.LICENSE.txt",
     "static/media/Atheneum_logo.145484f8.png": "/startup/static/media/Atheneum_logo.145484f8.png",
     "static/media/cardStyle.css": "/startup/static/media/founder-image__Vihaan.8bf9238c.jpeg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.f6f5972a.js",
     "static/js/2.627a907f.chunk.js",
-    "static/css/main.dc6ba19e.chunk.css",
-    "static/js/main.56245477.chunk.js"
+    "static/css/main.7f5eb9ac.chunk.css",
+    "static/js/main.2440eb17.chunk.js"
   ]
 }
