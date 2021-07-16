@@ -44,8 +44,7 @@
   text-shadow: -5px 0 magenta;
   overflow: hidden;
   top: 0;
-  animation: noise-1 3s linear infinite alternate-reverse,
-    glitch 5s 5.05s infinite;
+  animation: noise-1 3s linear infinite alternate-reverse;
 }
 .glitch::after {
   border-radius: 2rem;
@@ -57,24 +56,24 @@
   /* background: black; */
   overflow: hidden;
   top: 0;
-  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+  animation: noise-2 3s linear infinite alternate-reverse;
 }
-@keyframes glitch {
+/* @keyframes glitch {
   1% {
     transform: rotateX(10deg) skewX(90deg);
   }
   2% {
     transform: rotateX(0deg) skewX(0deg);
   }
-}
-@keyframes glitch-2 {
+} */
+/* @keyframes glitch-2 {
   1% {
     transform: rotateX(10deg) skewX(70deg);
   }
   2% {
     transform: rotateX(0deg) skewX(0deg);
   }
-}
+} */
 @keyframes noise-1 {
   3.3333333333% {
     clip-path: inset(4px 0 88px 0);
