@@ -22,32 +22,32 @@ const HeaderSmall = () => {
               inputRef.current.checked = false;
           }}
         >
-          <li>
+          <li id="item1">
             <Link to="/" class="logo">
               <img src={Logo} alt="Logo" class="item" />
             </Link>
           </li>
-          <li>
+          <li id="item2">
             <Link to="/founders" class="item">
               Founders
             </Link>
           </li>
-          <li>
+          <li id="item3">
             <Link to="/functionality" class="item">
               functionality
             </Link>
           </li>
-          <li>
+          <li id="item4">
             <Link to="/business-plan" class="item">
               business plan
             </Link>
           </li>
-          <li>
-            <Link to="/Features" class="item">
-              Features
+          <li id="item5">
+            <Link to="/Vision" class="item">
+              Vision
             </Link>
           </li>
-          <li>
+          <li id="item6">
             <Link to="/customer-analysis" class="item">
               Customer Analysis
             </Link>

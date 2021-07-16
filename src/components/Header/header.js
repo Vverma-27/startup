@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/Atheneum_logo.png";
 import "./headerStyle.css";
@@ -20,8 +20,8 @@ const Header = () => {
           <Link to="/business-plan" class="item">
             business plan
           </Link>
-          <Link to="/Features" class="item">
-            Features
+          <Link to="/Vision" class="item">
+            Vision
           </Link>
           <Link to="/customer-analysis" class="item">
             Customer Analysis
