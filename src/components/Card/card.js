@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import _ from "lodash";
 import "./cardStyle.css";
 
@@ -6,7 +6,7 @@ const Card = ({ data, num }) => {
   const { name, achievments } = data;
   const CardRef = useRef(null);
   // const didScroll = useRef(false);
-  useEffect(() => {
+  useLayoutEffect(() => {
     function isInViewport() {
       const rect = CardRef.current.getBoundingClientRect();
       return (

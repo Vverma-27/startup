@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Founders from "./Founders/founders";
 import Home from "./Home/home";
@@ -11,25 +11,35 @@ import Footer from "./Footer/footer";
 import "./responsive.css";
 
 const App = () => {
+  const [width, setwidth] = useState(window.innerWidth);
   const showLoader = () => {
     document.querySelector(".loadingContainer").classList.remove("load--hide");
   };
   const hideLoader = () => {
     document.querySelector(".loadingContainer").classList.add("load--hide");
   };
-  const width =
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth;
-  const header = !(width > 425) ? <SmallHeader /> : <Header />;
-
+  const header = () => {
+    return width > 525 ? <Header /> : <SmallHeader />;
+  };
   useEffect(() => {
     setTimeout(() => hideLoader(), 1000);
   }, []);
+  useLayoutEffect(() => {
+    const resizeFunc = () => {
+      setwidth(window.innerWidth);
+      console.log("called");
+    };
+    window.addEventListener("resize", resizeFunc);
+    return () => {
+      window.removeEventListener("resize", resizeFunc);
+    };
+  }, []);
+
+  // console.log(header());
   return (
     <section style={{ height: "100%" }}>
       <Router>
-        {header}
+        {header()}
 
         <section style={{ marginTop: "5rem", padding: "10rem 2rem" }}>
           <Switch>

@@ -45,7 +45,12 @@ const Founders = () => {
   // };
   return (
     <section className="founders-container">
-      <h3 className="heading__founders founders">Founders Of Book-Shala</h3>
+      <h3
+        className="heading__founders founders glitch"
+        data-text="Founders of Atheneum"
+      >
+        Founders Of Atheneum
+      </h3>
       <section className="flex__cards">
         <Card data={dataVihaan} num={"1"} />
         <Card data={dataSuyash} num={"2"} />
