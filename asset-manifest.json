@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/startup/static/css/main.9a4729af.chunk.css",
-    "main.js": "/startup/static/js/main.7425b010.chunk.js",
-    "main.js.map": "/startup/static/js/main.7425b010.chunk.js.map",
+    "main.css": "/startup/static/css/main.c8605ef6.chunk.css",
+    "main.js": "/startup/static/js/main.f29dc80d.chunk.js",
+    "main.js.map": "/startup/static/js/main.f29dc80d.chunk.js.map",
     "runtime-main.js": "/startup/static/js/runtime-main.f6f5972a.js",
     "runtime-main.js.map": "/startup/static/js/runtime-main.f6f5972a.js.map",
-    "static/js/2.ce88c49c.chunk.js": "/startup/static/js/2.ce88c49c.chunk.js",
-    "static/js/2.ce88c49c.chunk.js.map": "/startup/static/js/2.ce88c49c.chunk.js.map",
+    "static/js/2.fa15c85b.chunk.js": "/startup/static/js/2.fa15c85b.chunk.js",
+    "static/js/2.fa15c85b.chunk.js.map": "/startup/static/js/2.fa15c85b.chunk.js.map",
     "index.html": "/startup/index.html",
-    "static/css/main.9a4729af.chunk.css.map": "/startup/static/css/main.9a4729af.chunk.css.map",
-    "static/js/2.ce88c49c.chunk.js.LICENSE.txt": "/startup/static/js/2.ce88c49c.chunk.js.LICENSE.txt",
+    "static/css/main.c8605ef6.chunk.css.map": "/startup/static/css/main.c8605ef6.chunk.css.map",
+    "static/js/2.fa15c85b.chunk.js.LICENSE.txt": "/startup/static/js/2.fa15c85b.chunk.js.LICENSE.txt",
     "static/media/Atheneum_logo.145484f8.png": "/startup/static/media/Atheneum_logo.145484f8.png",
     "static/media/cardStyle.css": "/startup/static/media/founder-image__Vihaan.8bf9238c.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.f6f5972a.js",
-    "static/js/2.ce88c49c.chunk.js",
-    "static/css/main.9a4729af.chunk.css",
-    "static/js/main.7425b010.chunk.js"
+    "static/js/2.fa15c85b.chunk.js",
+    "static/css/main.c8605ef6.chunk.css",
+    "static/js/main.f29dc80d.chunk.js"
   ]
 }
