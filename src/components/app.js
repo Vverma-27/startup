@@ -1,17 +1,18 @@
 import React, { Suspense, useEffect, lazy } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import Loader from "./Loader/loader";
 import "./responsive.css";
 
 const App = () => {
   // const showLoader = () => {
   //   document.querySelector(".loadingContainer").classList.remove("load--hide");
   // };
-  const hideLoader = () => {
-    document.querySelector(".loadingContainer").classList.add("load--hide");
-  };
-  useEffect(() => {
-    setTimeout(() => hideLoader(), 1000);
-  }, []);
+  // const hideLoader = () => {
+  //   document.querySelector(".loadingContainer").classList.add("load--hide");
+  // };
+  // useEffect(() => {
+  //   setTimeout(() => hideLoader(), 1000);
+  // }, []);
 
   const Founders = lazy(() => import("./Founders/founders"));
   const Home = lazy(() => import("./Home/home"));
@@ -24,7 +25,7 @@ const App = () => {
   return (
     <section style={{ height: "100%" }}>
       <Router>
-        <Suspense fallback="loading">
+        <Suspense fallback={<Loader />}>
           <HeaderFinal />
           <Switch>
             <Route path={"/"} exact component={() => <Home />} />

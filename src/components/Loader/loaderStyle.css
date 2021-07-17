@@ -1,0 +1,17 @@
+.loadingContainer {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.load--hide {
+  opacity: 0;
+  display: none;
+}
