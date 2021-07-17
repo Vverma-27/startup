@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/Vision/Vision.js"],"names":["Features"],"mappings":"kIAAA,uBAMeA,UAJE,WACf,OAAO","file":"static/js/11.22d7ab3c.chunk.js","sourcesContent":["import React from \"react\";\r\n\r\nconst Features = () => {\r\n  return <div>Features Page</div>;\r\n};\r\n\r\nexport default Features;\r\n"],"sourceRoot":""}
