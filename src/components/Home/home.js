@@ -1,7 +1,129 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import Picture1 from "../../images/picture1.jpeg";
+import Picture2 from "../../images/picture2.jpeg";
+import Picture3 from "../../images/picture3.jpeg";
+import Picture4 from "../../images/picture4.jpeg";
+import "./homeStyle.css";
 
 const Home = () => {
-  return <div>Home page</div>;
+  const slideRef1 = useRef(null),
+    slideRef2 = useRef(null),
+    slideRef3 = useRef(null),
+    slideRef4 = useRef(null),
+    dotRef1 = useRef(null),
+    dotRef2 = useRef(null),
+    dotRef3 = useRef(null),
+    dotRef4 = useRef(null);
+  const slides = [slideRef1, slideRef2, slideRef3, slideRef4];
+  const dots = [dotRef1, dotRef2, dotRef3, dotRef4];
+  let slideIndex = 1;
+  useEffect(() => {
+    // console.log(slides, dots);
+    showSlides(slideIndex);
+    // const id = setInterval(() => plusSlides(1), 4000);
+    // return () => {
+    //   clearInterval(id);
+    // };
+  }, []);
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    let i;
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].current.classList.remove("slideActive");
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].current.classList.remove("active");
+    }
+    slides[slideIndex - 1].current.classList.add("slideActive");
+    dots[slideIndex - 1].current.classList.add("active");
+  }
+  return (
+    <section id="home_page" style={{ padding: "1rem" }}>
+      <section id="bg-image"></section>
+      <section style={{ height: "100vh", position: "relative" }}>
+        <section class="para">
+          <span class="header">Atheneum</span>
+          <br />
+          <span class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </span>
+        </section>
+      </section>
+      <section class="slideshow-container">
+        <section ref={slideRef1} class="mySlides fade">
+          <section class="numbertext">1 / 4</section>
+          <img src={Picture1} style={{ width: "100%" }} />
+          <section class="captiontext">Lorem Ipsum Dolor Set</section>
+        </section>
+        <section ref={slideRef2} class="mySlides fade">
+          <section class="numbertext">2 / 4</section>
+          <img src={Picture2} style={{ width: "100%" }} />
+          <section class="captiontext">Lorem Ipsum Dolor Set</section>
+        </section>
+        <section ref={slideRef3} class="mySlides fade">
+          <section class="numbertext">3 / 4</section>
+          <img src={Picture3} style={{ width: "100%" }} />
+          <section class="captiontext">Lorem Ipsum Dolor Set</section>
+        </section>
+
+        <section ref={slideRef4} class="mySlides fade">
+          <section class="numbertext">4 / 4</section>
+          <img src={Picture4} style={{ width: "100%" }} />
+          <section class="captiontext">Lorem Ipsum Dolor Set</section>
+        </section>
+
+        <a class="prev" onClick={() => plusSlides(-1)}>
+          &#10094;
+        </a>
+        <a class="next" onClick={() => plusSlides(1)}>
+          &#10095;
+        </a>
+        <br />
+        <section style={{ textAlign: "center" }}>
+          <span
+            ref={dotRef1}
+            class="dot"
+            onClick={() => currentSlide(1)}
+          ></span>
+          <span
+            ref={dotRef2}
+            class="dot"
+            onClick={() => currentSlide(2)}
+          ></span>
+          <span
+            ref={dotRef3}
+            class="dot"
+            onClick={() => currentSlide(3)}
+          ></span>
+          <span
+            ref={dotRef4}
+            class="dot"
+            onClick={() => currentSlide(4)}
+          ></span>
+        </section>
+      </section>
+    </section>
+  );
 };
 
 export default Home;

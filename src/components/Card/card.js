@@ -1,5 +1,5 @@
 import React, { useRef, useLayoutEffect } from "react";
-import _ from "lodash";
+import { throttle } from "lodash";
 import "./cardStyle.css";
 
 const Card = ({ data, num }) => {
@@ -18,7 +18,7 @@ const Card = ({ data, num }) => {
     const scrollFunc = () => {
       CardRef.current.classList.toggle("not-in-view", !isInViewport());
     };
-    const throttledFunc = _.throttle(scrollFunc, 550, {
+    const throttledFunc = throttle(scrollFunc, 550, {
       trailing: true,
       leading: true,
     });

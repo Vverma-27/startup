@@ -1,12 +1,5 @@
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect, lazy } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Founders from "./Founders/founders";
-import Home from "./Home/home";
-import Functionality from "./Functionality/functionality";
-import BusinessPlan from "./BusinessPlan/businessPlan";
-import Vision from "./Vision/Vision";
-import Footer from "./Footer/footer";
-import HeaderFinal from "./Header/headerFinal";
 import "./responsive.css";
 
 const App = () => {
@@ -20,13 +13,19 @@ const App = () => {
     setTimeout(() => hideLoader(), 1000);
   }, []);
 
+  const Founders = lazy(() => import("./Founders/founders"));
+  const Home = lazy(() => import("./Home/home"));
+  const Functionality = lazy(() => import("./Functionality/functionality"));
+  const BusinessPlan = lazy(() => import("./BusinessPlan/businessPlan"));
+  const Vision = lazy(() => import("./Vision/Vision"));
+  const Footer = lazy(() => import("./Footer/footer"));
+  const HeaderFinal = lazy(() => import("./Header/headerFinal"));
   // console.log(header());
   return (
     <section style={{ height: "100%" }}>
       <Router>
-        <HeaderFinal />
-
-        <section style={{ marginTop: "5rem", padding: "10rem 2rem" }}>
+        <Suspense fallback="loading">
+          <HeaderFinal />
           <Switch>
             <Route path={"/"} exact component={() => <Home />} />
             <Route path={"/founders"} exact component={() => <Founders />} />
@@ -42,9 +41,8 @@ const App = () => {
               component={() => <Functionality />}
             />
           </Switch>
-        </section>
-        <Footer />
-        {/* <section style={{ height: "10000px" }}></section> */}
+          <Footer />
+        </Suspense>
       </Router>
     </section>
   );

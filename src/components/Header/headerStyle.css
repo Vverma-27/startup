@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
   font-size: 5px;
 }
+#common_container {
+  margin-top: 5rem;
+  padding: 10rem 2rem;
+}
 
 body {
   font-family: "Montserrat", sans-serif;

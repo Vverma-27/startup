@@ -1,5 +1,4 @@
-import React from "react";
-import Card from "../Card/card";
+import React, { lazy } from "react";
 import "./founderStyle.css";
 
 const Founders = () => {
@@ -43,8 +42,10 @@ const Founders = () => {
   //     "Helped in Web Development",
   //   ],
   // };
+
+  const Card = lazy(() => import("../Card/card"));
   return (
-    <section className="founders-container">
+    <section className="founders-container" id="common_container">
       <h3
         className="heading__founders founders glitch"
         data-text="Founders of Atheneum"

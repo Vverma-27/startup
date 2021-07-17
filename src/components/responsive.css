@@ -1,30 +1,30 @@
 @media only screen and (min-width: 375px) {
   .flex__cards {
-    flex-flow: row wrap;
+    flex-flow: row wrap !important;
   }
 }
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 7px;
+    font-size: 7px !important;
   }
 }
 @media only screen and (min-width: 1024px) {
   html {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 }
 @media only screen and (min-width: 1440px) {
   html {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 @media only screen and (min-width: 1700px) {
   html {
-    font-size: 17px;
+    font-size: 17px !important;
   }
 }
 @media only screen and (min-width: 2300px) {
   html {
-    font-size: 25px;
+    font-size: 25px !important;
   }
 }
