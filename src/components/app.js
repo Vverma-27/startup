@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Loader from "./Loader/loader";
 import "./responsive.css";

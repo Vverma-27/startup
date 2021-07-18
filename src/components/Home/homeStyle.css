@@ -17,7 +17,7 @@
 }
 
 span.text {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: white;
   font-family: "Montserrat", sans-serif;
   line-height: 3.5rem !important;
@@ -48,8 +48,10 @@ span.text {
 }
 .slideActive {
   display: block;
+  height: 100%;
 }
 img {
+  object-fit: cover;
   vertical-align: middle;
 }
 
@@ -59,6 +61,7 @@ img {
   position: relative;
   margin: auto;
   margin-bottom: 35px;
+  height: 50vh;
 }
 
 /* Next & previous buttons */
