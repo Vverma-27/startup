@@ -62,15 +62,13 @@
       rgba(255, 185, 0, 0.7),
       rgba(255, 119, 48, 0.7)
     ),
-    url("../../images/founder-image__Vihaan.jpeg");
+    url("../../images/founder-image__Vihaan.webp");
 }
-.image--Suyash,
-.image--Vivek {
+.image--Suyash {
   background-image: linear-gradient(to right, #7ed56f, #28b485),
     url("https://images.unsplash.com/photo-1427830228531-ccf2652188b7");
 }
-.image--Ananya,
-.image--Poonam {
+.image--Ananya {
   background-image: linear-gradient(to right bottom, #299bff, #5634fa),
     url("https://images.unsplash.com/photo-1427830228531-ccf2652188b7");
 }

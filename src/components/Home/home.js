@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
-import Picture1 from "../../images/picture1.jpeg";
-import Picture2 from "../../images/picture2.jpeg";
-import Picture3 from "../../images/picture3.jpeg";
-import Picture4 from "../../images/picture4.jpeg";
+import Picture1 from "../../images/picture1.webp";
+import Picture2 from "../../images/picture2.webp";
+import Picture3 from "../../images/picture3.webp";
+import Picture4 from "../../images/picture4.webp";
 import "./homeStyle.css";
 
 const Home = () => {
@@ -72,23 +72,23 @@ const Home = () => {
       <section class="slideshow-container">
         <section ref={slideRef1} class="mySlides fade">
           <section class="numbertext">1 / 4</section>
-          <img src={Picture1} style={{ width: "100%" }} />
+          <img src={Picture1} style={{ width: "100%", height: "100%" }} />
           <section class="captiontext">Lorem Ipsum Dolor Set</section>
         </section>
         <section ref={slideRef2} class="mySlides fade">
           <section class="numbertext">2 / 4</section>
-          <img src={Picture2} style={{ width: "100%" }} />
+          <img src={Picture2} style={{ width: "100%", height: "100%" }} />
           <section class="captiontext">Lorem Ipsum Dolor Set</section>
         </section>
         <section ref={slideRef3} class="mySlides fade">
           <section class="numbertext">3 / 4</section>
-          <img src={Picture3} style={{ width: "100%" }} />
+          <img src={Picture3} style={{ width: "100%", height: "100%" }} />
           <section class="captiontext">Lorem Ipsum Dolor Set</section>
         </section>
 
         <section ref={slideRef4} class="mySlides fade">
           <section class="numbertext">4 / 4</section>
-          <img src={Picture4} style={{ width: "100%" }} />
+          <img src={Picture4} style={{ width: "100%", height: "100%" }} />
           <section class="captiontext">Lorem Ipsum Dolor Set</section>
         </section>
 

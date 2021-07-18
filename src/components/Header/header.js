@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../images/Atheneum_logo.png";
+import Logo from "../../images/Atheneum_logo.webp";
 import "./headerStyle.css";
 
 const Header = () => {

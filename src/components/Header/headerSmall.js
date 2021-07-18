@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../images/Atheneum_logo.png";
+import Logo from "../../images/Atheneum_logo.webp";
 
 const HeaderSmall = () => {
   const inputRef = useRef(null);

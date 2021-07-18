@@ -1,8 +1,7 @@
-import React, { Suspense, useEffect, lazy } from "react";
+import React, { Suspense, lazy } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Loader from "./Loader/loader";
 import "./responsive.css";
-
 const App = () => {
   // const showLoader = () => {
   //   document.querySelector(".loadingContainer").classList.remove("load--hide");
@@ -13,7 +12,6 @@ const App = () => {
   // useEffect(() => {
   //   setTimeout(() => hideLoader(), 1000);
   // }, []);
-
   const Founders = lazy(() => import("./Founders/founders"));
   const Home = lazy(() => import("./Home/home"));
   const Functionality = lazy(() => import("./Functionality/functionality"));
