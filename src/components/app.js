@@ -15,7 +15,7 @@ const App = () => {
   const Founders = lazy(() => import("./Founders/founders"));
   const Home = lazy(() => import("./Home/home"));
   const Functionality = lazy(() => import("./Functionality/functionality"));
-  const BusinessPlan = lazy(() => import("./BusinessPlan/businessPlan"));
+  const BusinessModel = lazy(() => import("./BusinessModel/businessModel"));
   const Vision = lazy(() => import("./Vision/Vision"));
   const Footer = lazy(() => import("./Footer/footer"));
   const HeaderFinal = lazy(() => import("./Header/headerFinal"));
@@ -29,9 +29,9 @@ const App = () => {
             <Route path={"/"} exact component={() => <Home />} />
             <Route path={"/founders"} exact component={() => <Founders />} />
             <Route
-              path={"/business-plan"}
+              path={"/business-Model"}
               exact
-              component={() => <BusinessPlan />}
+              component={() => <BusinessModel />}
             />
             <Route path={"/Vision"} exact component={() => <Vision />} />
             <Route

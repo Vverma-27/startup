@@ -161,7 +161,7 @@ const Home = () => {
       </section>
       <section class="counters">
         <section>
-          <i class="fa fa-tree fa-4x"></i>
+          <i class="tree icon huge"></i>
           <section ref={counterRef1} class="counter" data-target="7000000000">
             0
           </section>
@@ -169,7 +169,7 @@ const Home = () => {
           <h4>7 Billion</h4>
         </section>
         <section>
-          <i class="fa fa-tint fa-4x"></i>
+          <i class="tint icon huge"></i>
           <section ref={counterRef2} class="counter" data-target="125000000000">
             0
           </section>
@@ -177,7 +177,7 @@ const Home = () => {
           <h4>125 Billion Litres</h4>
         </section>
         <section>
-          <i class="fa fa-book-dead fa-4x"></i>
+          <i class="book icon huge"></i>
           <section ref={counterRef3} class="counter" data-target="55000000">
             0
           </section>

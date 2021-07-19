@@ -1,0 +1,32 @@
+.model__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  width: 100%;
+  grid-gap: 10px;
+  padding: 0.5rem;
+  font-size: 1.09rem;
+  background: black;
+  border: 4px solid aliceblue;
+}
+.row ul {
+  padding: 10px;
+  list-style: none;
+}
+.row-1 {
+  grid-row: 1/2;
+}
+.row-2 {
+  grid-row: 2/3;
+}
+.row-full {
+  grid-row: 1 / span 2;
+}
+.title {
+  text-align: center;
+}
+.row {
+  border-radius: 5px;
+  border: 4px solid #fff;
+}

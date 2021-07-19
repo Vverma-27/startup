@@ -17,8 +17,8 @@ const Header = () => {
           <Link to="/functionality" class="item">
             functionality
           </Link>
-          <Link to="/business-plan" class="item">
-            business plan
+          <Link to="/business-model" class="item">
+            business model
           </Link>
           <Link to="/Vision" class="item">
             Vision
