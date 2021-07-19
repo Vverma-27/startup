@@ -1,0 +1,2 @@
+(this["webpackJsonpstartup-competition"]=this["webpackJsonpstartup-competition"]||[]).push([[10],{40:function(t,i,n){"use strict";n.r(i);n(0);var c=n(1);i.default=function(){return Object(c.jsx)("div",{id:"common_container",children:"Functionality Page"})}}}]);
+//# sourceMappingURL=10.b7ee3753.chunk.js.map
