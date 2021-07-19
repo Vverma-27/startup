@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.vision #heading {
+  margin-top: 6vh;
+  padding: 1vh 7vw 2vh 7vw;
+  background-color: #3effdaba;
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.vision mark {
+  background-color: #3effdaba;
+  color: white;
+  border-radius: 12px;
+}
+
+.vision #pageTitle {
+  color: white;
+  font-size: 10vh;
+  font-family: "Bebas Neue", cursive;
+}
+
+.vision #quote {
+  color: white;
+  font-size: 2.5vh;
+  font-style: italic;
+}
+
+.vision #vision-body {
+  padding: 2vh 7vw;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.vision section {
+  margin: 6vh 0vh;
+}
+
+.vision img {
+  width: 45vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.5s;
+  margin: 10 0px;
+  box-shadow: 15px 20px 10px rgba(0, 0, 0, 0.5);
+  filter: contrast(150%);
+}
+
+.vision img:hover {
+  filter: contrast(100%);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.vision #image1 {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  float: right;
+}
+
+.vision #image2 {
+  margin-right: 20px;
+  float: left;
+}
+
+.vision .text {
+  padding-top: 10vh;
+  color: white;
+  font-size: 3vh;
+}
+
+.vision .goals {
+  float: center;
+  padding-top: 5vh;
+  color: white;
+  font-size: 4vh;
+  line-height: 2;
+}
+
+.vision .goals i {
+  font-size: 8vh;
+  text-shadow: 5px 5px 3px black;
+}
+
+.vision #goal-header {
+  color: white;
+  font-size: 7vh;
+  font-family: "Bebas Neue", cursive;
+  line-height: 1;
+  text-shadow: 5px 5px 3px #3effdaba;
+}
+
+.vision .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.vision .column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.vision .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}

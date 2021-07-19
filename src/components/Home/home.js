@@ -90,20 +90,28 @@ const Home = () => {
     <section id="home_page">
       <section id="bg-image"></section>
       <section
-        style={{ height: "100vh", position: "relative", padding: "1rem" }}
+        style={{
+          height: "100vh",
+          position: "relative",
+          padding: "1rem",
+          marginTop: "4rem",
+        }}
       >
         <section class="para">
           <span class="header">Atheneum</span>
           <br />
           <span class="text">
-            Atheneum is a not-for-profit startup in the education industry. It
-            connects students in anonymity. It allows students to get books from
-            other students in a 10km radius. It will partner with a third-party
-            delivery company that will deliver books from the donator to the
-            receiver.Atheneum’s presence in North India will be the first of its
-            kind. Atheneum will deliver any preparation or study books to
-            students in need of it in a 10km radius. It will also charge a low
-            delivery fee to make it affordable for everyone.
+            Atheneum (meaning : the temple of Athena - Greek Goddess of
+            Knowledge) is a not-for profit startup in the education industry.
+            One of the newest ideas of our time, Atheneum allows students all
+            over the country from all backgrounds to donate and receive (free)
+            books in a 10 Km radius. Partnering with third party delivery
+            companies, Atheneum will ensure a smooth delivery process, even in
+            the most remote areas at minimal costs. It’s presence in North India
+            will be the first of its kind. With a very low delivery fee,
+            Atheneum will deliver books of all kind and even reference material,
+            making it affordable for everyone. This revolutionary idea, will
+            solve several real-world problems.
           </span>
         </section>
       </section>
@@ -111,23 +119,27 @@ const Home = () => {
         <section ref={slideRef1} class="mySlides fade">
           <section class="numbertext">1 / 4</section>
           <img src={Picture1} style={{ width: "100%", height: "100%" }} />
-          <section class="captiontext">Lorem Ipsum Dolor Set</section>
+          <section class="captiontext">
+            Carbon Footprint from Paper Factories
+          </section>
         </section>
         <section ref={slideRef2} class="mySlides fade">
           <section class="numbertext">2 / 4</section>
           <img src={Picture2} style={{ width: "100%", height: "100%" }} />
-          <section class="captiontext">Lorem Ipsum Dolor Set</section>
+          <section class="captiontext">
+            Deforestation Due To Book Manufacturing
+          </section>
         </section>
         <section ref={slideRef3} class="mySlides fade">
           <section class="numbertext">3 / 4</section>
           <img src={Picture3} style={{ width: "100%", height: "100%" }} />
-          <section class="captiontext">Lorem Ipsum Dolor Set</section>
+          <section class="captiontext">Wasted Books</section>
         </section>
 
         <section ref={slideRef4} class="mySlides fade">
           <section class="numbertext">4 / 4</section>
           <img src={Picture4} style={{ width: "100%", height: "100%" }} />
-          <section class="captiontext">Lorem Ipsum Dolor Set</section>
+          <section class="captiontext">Diminishing Public Libraries</section>
         </section>
 
         <a class="prev" onClick={() => plusSlides(-1)}>
@@ -161,30 +173,41 @@ const Home = () => {
         </section>
       </section>
       <section class="counters">
-        <section>
-          <i class="tree icon huge"></i>
-          <section ref={counterRef1} class="counter" data-target="7000000000">
-            0
+        <section class="counters__flex">
+          <section>
+            <i class="tree icon huge"></i>
+            <section ref={counterRef1} class="counter" data-target="7000000000">
+              0
+            </section>
+            <h3>Trees Cut</h3>
+            <h4>7 Billion</h4>
           </section>
-          <h3>Trees Cut</h3>
-          <h4>7 Billion</h4>
-        </section>
-        <section>
-          <i class="tint icon huge"></i>
-          <section ref={counterRef2} class="counter" data-target="125000000000">
-            0
+          <section>
+            <i class="tint icon huge"></i>
+            <section
+              ref={counterRef2}
+              class="counter"
+              data-target="125000000000"
+            >
+              0
+            </section>
+            <h3>Water Wasted</h3>
+            <h4>125 Billion Litres</h4>
           </section>
-          <h3>Water Wasted</h3>
-          <h4>125 Billion Litres</h4>
-        </section>
-        <section>
-          <i class="book icon huge"></i>
-          <section ref={counterRef3} class="counter" data-target="55000000">
-            0
+          <section>
+            <i class="book icon huge"></i>
+            <section ref={counterRef3} class="counter" data-target="55000000">
+              0
+            </section>
+            <h3>Books Wasted</h3>
+            <h4>55 Million</h4>
           </section>
-          <h3>Books Wasted</h3>
-          <h4>55 Million</h4>
         </section>
+        <hr />
+        "These are average yearly staistics." Atheneum is committed to solve
+        these grave problems. With a vision to reduce these statistics by half,
+        in the next couple of years, we present you with a nouveau concept which
+        combines technology, knowledge as well as past experiences.
       </section>
     </section>
   );

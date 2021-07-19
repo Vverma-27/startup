@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Amarante|Trirong:wght@300;400;500;600;700;800;900");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.functionality {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.content {
+  width: 45vw;
+}
+h3 {
+  color: #00ffff;
+  font-style: oblique;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Amarante", serif;
+  font-size: 2rem;
+}
+
+p {
+  color: #ffffff;
+  font-style: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Trirong", serif;
+  font-size: 1.8rem;
+}
+
+ul.a {
+  background-color: #3399ff;
+  list-style-image: url("../../images/list_icon.png");
+  color: rgba(97, 85, 85, 0);
+  font-family: "Trirong", serif;
+  padding-left: 7rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 0.5rem;
+}
+
+ul.b {
+  list-style-image: none;
+  list-style-type: circle;
+  font-family: "Trirong", serif;
+  font-size: 1.5rem;
+  color: #000;
+}
+ul.a li,
+ul.b li {
+  color: #000;
+  font-style: normal;
+  font-family: "Trirong", serif;
+  font-size: 1.3rem;
+  background-color: #cce5ff;
+  margin: 0.5rem;
+}
+
+h6 {
+  color: #ffd700;
+  font-style: normal;
+  font-family: "Trirong", serif;
+  display: inline;
+  font-size: 1.3rem;
+  background-color: #cce5ff;
+  margin: 0.3rem;
+}
+#heading {
+  margin-top: 6vh;
+  padding: 1vh 7vw 2vh 7vw;
+  background-color: #3effdaba;
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+#pageTitle {
+  color: white;
+  font-size: 10vh;
+  font-family: "Bebas Neue", cursive;
+}

@@ -19,6 +19,7 @@ const App = () => {
   const Vision = lazy(() => import("./Vision/Vision"));
   const Footer = lazy(() => import("./Footer/footer"));
   const HeaderFinal = lazy(() => import("./Header/headerFinal"));
+  const MarketAnalysis = lazy(() => import("./MarketAnalysis/marketAnalysis"));
   // console.log(header());
   return (
     <section style={{ height: "100%" }}>
@@ -38,6 +39,11 @@ const App = () => {
               path={"/functionality"}
               exact
               component={() => <Functionality />}
+            />
+            <Route
+              path={"/market-analysis"}
+              exact
+              component={() => <MarketAnalysis />}
             />
           </Switch>
           <Footer />

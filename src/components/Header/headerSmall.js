@@ -28,28 +28,28 @@ const HeaderSmall = () => {
             </Link>
           </li>
           <li id="item2">
-            <Link to="/founders" class="item">
-              Founders
-            </Link>
-          </li>
-          <li id="item3">
             <Link to="/functionality" class="item">
               functionality
             </Link>
           </li>
-          <li id="item4">
-            <Link to="/business-plan" class="item">
-              business plan
-            </Link>
-          </li>
-          <li id="item5">
+          <li id="item3">
             <Link to="/Vision" class="item">
               Vision
             </Link>
           </li>
+          <li id="item4">
+            <Link to="/business-model" class="item">
+              business model
+            </Link>
+          </li>
+          <li id="item5">
+            <Link to="/market-analysis" class="item">
+              market Analysis
+            </Link>
+          </li>
           <li id="item6">
-            <Link to="/customer-analysis" class="item">
-              Customer Analysis
+            <Link to="/founders" class="item">
+              Founders
             </Link>
           </li>
         </ul>

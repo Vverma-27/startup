@@ -11,20 +11,20 @@ const Header = () => {
           <img src={Logo} alt="Logo" height="20px" />
         </Link>
         <div class="right menu">
-          <Link to="/founders" class="item">
-            Founders
-          </Link>
           <Link to="/functionality" class="item">
             functionality
-          </Link>
-          <Link to="/business-model" class="item">
-            business model
           </Link>
           <Link to="/Vision" class="item">
             Vision
           </Link>
-          <Link to="/customer-analysis" class="item">
-            Customer Analysis
+          <Link to="/business-model" class="item">
+            business model
+          </Link>
+          <Link to="/market-analysis" class="item">
+            market Analysis
+          </Link>
+          <Link to="/founders" class="item">
+            Founders
           </Link>
           {/* <a class="item">Messages</a>
           <a class="item">Friends</a>
