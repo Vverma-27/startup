@@ -21,8 +21,14 @@
 .footer .footer__information > *,
 .footer .footer__icons > * {
   margin-right: 1.2rem;
+  margin-bottom: 0;
 }
 .footer .footer__information > i,
 .footer .footer__icons > i {
   cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.footer .footer__icons > i:hover {
+  color: #55efc4;
 }
