@@ -1,2 +1,0 @@
-.model__grid{display:grid;width:100%;grid-gap:10px;padding:.5rem;font-size:1.3rem;background:#000;border:4px solid #f0f8ff;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(2,1fr)}.row ul{padding:10px;list-style:none}.column-1,.row-1{grid-row:1/2}.column-2,.row-2{grid-row:2/3}.column-full,.row-full{grid-row:1/span 2}.title{text-align:center}.row{border-radius:5px;border:4px solid #fff}
-/*# sourceMappingURL=5.de11d98f.chunk.css.map */

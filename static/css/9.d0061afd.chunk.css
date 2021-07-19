@@ -1,0 +1,2 @@
+.footer{position:fixed;bottom:0;left:0;width:100vw;background-color:#031424;height:4.5rem;padding:0 3rem}.footer,.footer__icons,.footer__information{display:flex;align-items:center;justify-content:space-between}.footer__icons,.footer__information{padding:1rem}.footer .footer__icons>*,.footer .footer__information>*{margin-right:1.2rem;margin-bottom:0}i{cursor:pointer;transition:color .5s ease}i:hover{color:#55efc4}
+/*# sourceMappingURL=9.d0061afd.chunk.css.map */
