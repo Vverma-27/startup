@@ -96,13 +96,14 @@ const Home = () => {
           <span class="header">Atheneum</span>
           <br />
           <span class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Atheneum is a not-for-profit startup in the education industry. It
+            connects students in anonymity. It allows students to get books from
+            other students in a 10km radius. It will partner with a third-party
+            delivery company that will deliver books from the donator to the
+            receiver.Atheneum’s presence in North India will be the first of its
+            kind. Atheneum will deliver any preparation or study books to
+            students in need of it in a 10km radius. It will also charge a low
+            delivery fee to make it affordable for everyone.
           </span>
         </section>
       </section>

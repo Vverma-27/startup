@@ -39,7 +39,7 @@ const BusinessPlan = () => {
             <br />
           </ul>
         </section>
-        <section className="row row row-full">
+        <section className="row row-full">
           <h1 className="title">Value Proposition</h1>
           <ul className="list">
             <li className="point">
@@ -66,7 +66,7 @@ const BusinessPlan = () => {
             <br />
           </ul>
         </section>
-        <section className="row row-1">
+        <section className="row column-1">
           <h1 className="title">Key Activities</h1>
           <ul className="list">
             <li className="point">
@@ -81,7 +81,7 @@ const BusinessPlan = () => {
             <br />
           </ul>
         </section>
-        <section className="row row row-2">
+        <section className="row column-2">
           <h1 className="title">Key Resources</h1>
           <ul className="list">
             <li className="point">
@@ -94,7 +94,7 @@ const BusinessPlan = () => {
             <br />
           </ul>
         </section>
-        <section className="row row row-full">
+        <section className="row column-full">
           <h1 className="title">Channels</h1>
           <ul className="list">
             <li className="point">
@@ -120,8 +120,7 @@ const BusinessPlan = () => {
             <br />
           </ul>
         </section>
-
-        <section className="row row-1">
+        <section className="row column-1">
           <h1 className="title">Revenue Streams</h1>
           <ul className="list">
             <li className="point">
@@ -139,7 +138,7 @@ const BusinessPlan = () => {
             <br />
           </ul>
         </section>
-        <section className="row row-2">
+        <section className="row column-2">
           <h1 className="title">Customer Segments</h1>
           <ul className="list">
             <li className="point">
@@ -154,7 +153,7 @@ const BusinessPlan = () => {
             <br />
           </ul>
         </section>
-        <section className="row row row-full">
+        <section className="row column-full">
           <h1 className="title">Customer Relationships</h1>
           <ul className="list">
             <li className="point">
