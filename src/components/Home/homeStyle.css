@@ -167,7 +167,7 @@ img {
   align-items: center;
   text-align: center;
   flex-flow: column wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .counters i {

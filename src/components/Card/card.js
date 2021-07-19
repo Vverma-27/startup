@@ -49,6 +49,8 @@ const Card = ({ data, num }) => {
       <section class={`box__side back back--${num}`}>
         <section class="card__information">
           <ul>{renderedAchievments}</ul>
+          <br />
+          <i className="github icon huge"></i>
         </section>
       </section>
     </section>

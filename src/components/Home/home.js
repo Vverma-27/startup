@@ -174,7 +174,7 @@ const Home = () => {
             0
           </section>
           <h3>Water Wasted</h3>
-          <h4>125 Billion</h4>
+          <h4>125 Billion Litres</h4>
         </section>
         <section>
           <i class="fa fa-book-dead fa-4x"></i>

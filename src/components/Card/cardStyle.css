@@ -31,6 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
 }
 .back--1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), none;
@@ -47,6 +48,7 @@
 }
 .box:hover .box__side.back {
   transform: rotateY(0);
+  visibility: visible;
 }
 .box__image {
   height: 35rem;
