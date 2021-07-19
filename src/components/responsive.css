@@ -7,6 +7,9 @@
   html {
     font-size: 7px !important;
   }
+  .counters {
+    flex-flow: row wrap !important;
+  }
 }
 @media only screen and (min-width: 1024px) {
   html {

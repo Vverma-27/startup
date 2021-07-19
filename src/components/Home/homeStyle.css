@@ -25,7 +25,7 @@ span.text {
 }
 
 .para {
-  min-width: calc(32.5rem - 1rem - 10px);
+  min-width: calc(325px - 1rem - 10px);
   display: flex;
   flex-direction: column wrap;
   flex-flow: column wrap;
@@ -166,6 +166,7 @@ img {
   display: flex;
   align-items: center;
   text-align: center;
+  flex-flow: column wrap;
   justify-content: space-between;
 }
 
