@@ -6,16 +6,17 @@ const Founders = ({ hide }) => {
     name: "Vihaan Verma",
     achievments: [
       "Likes Web Development and playing sports",
-      "Built the business model",
-      "Helped in Web Development",
+      "Favourite sport is Football",
+      "Has become lethargic since lockdown started",
     ],
   };
   const dataSuyash = {
     name: "Suyash Handa",
     achievments: [
-      "Likes Physics and Chemistry",
-      "Thought of Book Shala",
-      "Helped in Web Development",
+      "Winner of the Lenovo SmarterEd Scholarship 2021",
+      "Fond of writing, debates and MUNs",
+      "Also plays the guitar and runs a YouTube Channel",
+      "Likes project designing, illustrating and Web Development",
     ],
   };
   const dataAnanya = {
