@@ -7,7 +7,7 @@ const BusinessPlan = ({ hide }) => {
   return (
     <section id="common_container">
       <section id="heading">
-        <section id="pageTitle">Market Analysis Of Atheneum</section>
+        <section id="pageTitle">Business Model Of Atheneum</section>
       </section>
       <section className="model__grid">
         <section className="row row-1">

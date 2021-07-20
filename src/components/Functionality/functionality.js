@@ -14,6 +14,7 @@ const Functionality = ({ hide }) => {
         style={{
           background: "#000",
           padding: "3rem",
+          marginTop: "5rem",
           borderRadius: "1rem",
           border: "0.4rem solid #fff",
         }}
@@ -126,6 +127,16 @@ const Functionality = ({ hide }) => {
             width: "45vw",
           }}
         >
+          <h1
+            className="headingui"
+            style={{
+              border: "2px solid #fff",
+              padding: "1rem",
+              textAlign: "center",
+            }}
+          >
+            UI Prototype of Our Product:
+          </h1>
           <img
             src={Ui}
             alt="UI Image"

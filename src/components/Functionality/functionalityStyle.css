@@ -50,9 +50,10 @@ ul.b li {
   color: #000;
   font-style: normal;
   font-family: "Trirong", serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   background-color: #cce5ff;
   margin: 0.5rem;
+  font-weight: 900;
 }
 
 h6 {
@@ -60,7 +61,7 @@ h6 {
   font-style: normal;
   font-family: "Trirong", serif;
   display: inline;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   background-color: #cce5ff;
   margin: 0.3rem;
 }

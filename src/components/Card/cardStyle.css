@@ -11,6 +11,7 @@
   transform: scale(1);
   transition: transform 0.6s ease 0.5s;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 .box.not-in-view {
   transform: scale(0.5);
