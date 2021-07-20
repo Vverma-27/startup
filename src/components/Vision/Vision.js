@@ -59,7 +59,7 @@ const Vision = ({ hide }) => {
             </section>
           </center>
         </section>
-        <br />
+        <hr />
         <section id="part3">
           <center>
             <section class="gallery">

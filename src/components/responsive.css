@@ -46,6 +46,33 @@
   .counters__flex {
     flex-flow: row wrap !important;
   }
+  .vision #part1 #image1 {
+    margin-left: 20px;
+    margin-bottom: 50px;
+    width: 45%;
+    float: right;
+  }
+  .vision #part1 {
+    display: block !important;
+  }
+  .vision .row {
+    flex-flow: row wrap !important;
+  }
+  .vision img {
+    height: 50vh !important;
+    margin: 10 0px;
+    box-shadow: 15px 20px 10px rgb(0 0 0 / 50%);
+  }
+  .vision .column {
+    display: block !important;
+    max-width: 30%;
+    padding: 0 4px;
+  }
+  .vision .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 1024px) {
   html {

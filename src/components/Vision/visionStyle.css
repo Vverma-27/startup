@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .vision #heading {
-  margin-top: 6vh;
-  padding: 1vh 7vw 2vh 7vw;
+  margin-top: 6rem;
+  padding: 1rem 6rem 2rem 6rem;
   background-color: #3effdaba;
   border-top: solid white 2px;
   border-bottom: solid white 2px;
-  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 10px 5px rgb(0 0 0 / 50%);
 }
 
 .vision mark {
@@ -17,23 +17,31 @@
 
 .vision #pageTitle {
   color: white;
-  font-size: 10vh;
+  font-size: 8rem;
   font-family: "Bebas Neue", cursive;
 }
 
 .vision #quote {
   color: white;
-  font-size: 2.5vh;
+  font-size: 2.5rem;
   font-style: italic;
 }
 
 .vision #vision-body {
-  padding: 2vh 7vw;
+  padding: 2rem 3rem;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-
+.vision #part1 {
+  display: flex;
+  flex-flow: column;
+}
+.vision #part1 img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -44,12 +52,11 @@
 }
 
 .vision section {
-  margin: 6vh 0vh;
+  margin: 6rem 0;
 }
 
 .vision img {
-  width: 45vw;
-  height: 50vh;
+  width: 45%;
   object-fit: cover;
   border-radius: 8px;
   transition: 0.5s;
@@ -62,22 +69,10 @@
   filter: contrast(100%);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
-
-.vision #image1 {
-  margin-left: 20px;
-  margin-bottom: 50px;
-  float: right;
-}
-
-.vision #image2 {
-  margin-right: 20px;
-  float: left;
-}
-
 .vision .text {
-  padding-top: 10vh;
+  padding-top: 10rem;
   color: white;
-  font-size: 3vh;
+  font-size: 3rem;
 }
 
 .vision .goals {
@@ -103,18 +98,13 @@
 
 .vision .row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .vision .column {
-  flex: 30%;
-  max-width: 30%;
-  padding: 0 4px;
-}
-
-.vision .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
