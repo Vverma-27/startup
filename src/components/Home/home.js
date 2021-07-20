@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useLayoutEffect } from "react";
 import Picture1 from "../../images/picture1.webp";
 import Picture2 from "../../images/picture2.webp";
 import Picture3 from "../../images/picture3.webp";
@@ -23,41 +23,44 @@ const Home = ({ hide }) => {
   const slides = [slideRef1, slideRef2, slideRef3, slideRef4];
   const dots = [dotRef1, dotRef2, dotRef3, dotRef4];
   let slideIndex = 1;
+  useLayoutEffect(() => {
+    function isInViewport(ref) {
+      const rect = ref.current.getBoundingClientRect();
+      return (
+        rect.top + rect.height / 2 >= 0 &&
+        rect.bottom - rect.height / 2 <=
+          (window.innerHeight || document.documentElement.clientHeight)
+      );
+    }
+    const scrollFunc = () => {
+      counters.forEach((counter) => {
+        const updateCount = () => {
+          if (counter.current === null) return;
+          if (!isInViewport(counter)) return;
+          const target = parseInt(
+            counter.current.getAttribute("data-target"),
+            10
+          );
+          const count = parseInt(counter.current.innerText, 10);
+          const inc = target / speed;
+
+          if (count < target) {
+            counter.current.innerText = count + inc;
+            setTimeout(updateCount, 1);
+          } else {
+            counter.current.innerText = target;
+          }
+        };
+
+        updateCount();
+      });
+    };
+    window.addEventListener("scroll", scrollFunc);
+    return () => window.removeEventListener("scroll", scrollFunc);
+  }, []);
   useEffect(() => {
     // console.log(slides, dots);
-    let id;
     showSlides(slideIndex);
-    counters.forEach((counter) => {
-      const updateCount = () => {
-        if (counter.current === null) return;
-        const target = parseInt(
-          counter.current.getAttribute("data-target"),
-          10
-        );
-        const count = parseInt(counter.current.innerText, 10);
-
-        // Lower inc to slow and higher to slow
-        const inc = target / speed;
-
-        // console.log(inc);
-        // console.log(count);
-
-        // Check if target is reached
-
-        if (count < target) {
-          // Add inc to count and output in counter
-          counter.current.innerText = count + inc;
-          // Call function every ms
-          // updateCount();
-          id = setTimeout(updateCount, 1);
-        } else {
-          counter.current.innerText = target;
-        }
-      };
-
-      updateCount();
-    });
-    return () => clearTimeout(id);
     // const id = setInterval(() => plusSlides(1), 4000);
     // return () => {
     //   clearInterval(id);
