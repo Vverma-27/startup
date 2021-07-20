@@ -3,15 +3,13 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Loader from "./Loader/loader";
 import "./responsive.css";
 const App = () => {
-  const showLoader = () => {
-    document.querySelector(".loadingContainer").classList.remove("load--hide");
-  };
   const hideLoader = () => {
-    setTimeout(
-      () =>
-        document.querySelector(".loadingContainer").classList.add("load--hide"),
-      1500
-    );
+    setTimeout(() => {
+      {
+        document.querySelector(".loadingContainer").classList.add("load--hide");
+        document.body.style.overflowY = "visible";
+      }
+    }, 2000);
     // console.log("yes");
   };
   // useEffect(() => {

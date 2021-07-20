@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+#heading {
+  margin-top: 6rem;
+  padding: 1rem 6rem 2rem 6rem;
+  background-color: #3effdaba;
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+  box-shadow: 5px 10px 5px rgb(0 0 0 / 50%);
+}
+#pageTitle {
+  color: white;
+  font-size: 8rem;
+  font-family: "Bebas Neue", cursive;
+}

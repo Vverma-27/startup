@@ -1,16 +1,21 @@
 import React from "react";
-import favicon from "../../images/Atheneum__favicon.svg";
 import "./loaderStyle.css";
 
 const Loader = () => {
   return (
-    <div>
-      <section class="ui segment loadingContainer">
-        <section class="ui active dimmer">
-          <img src={favicon} style={{ height: "25rem" }} />
-        </section>
+    <section class="loadingContainer">
+      <section class="bookshelf_wrapper">
+        <ul class="books_list">
+          <li class="book_item first"></li>
+          <li class="book_item second"></li>
+          <li class="book_item third"></li>
+          <li class="book_item fourth"></li>
+          <li class="book_item fifth"></li>
+          <li class="book_item sixth"></li>
+        </ul>
+        <section class="shelf"></section>
       </section>
-    </div>
+    </section>
   );
 };
 

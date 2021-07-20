@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
-
+import "./marketStyle.css";
 const MarketAnalysis = ({ hide }) => {
   useEffect(() => hide(), []);
   return (
     <section id="common_container">
+      <section id="heading">
+        <section id="pageTitle">Market Analysis Of Atheneum</section>
+      </section>
       <section
         className="analysis"
         style={{
@@ -11,6 +14,7 @@ const MarketAnalysis = ({ hide }) => {
           padding: "3rem",
           borderRadius: "1rem",
           border: "0.4rem solid #fff",
+          marginTop: "5rem",
         }}
       >
         <h1 className="heading__analysis">Overview</h1>

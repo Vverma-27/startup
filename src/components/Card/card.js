@@ -3,7 +3,7 @@ import { throttle } from "lodash";
 import "./cardStyle.css";
 
 const Card = ({ data, num }) => {
-  const { name, achievments } = data;
+  const { name, achievments, link } = data;
   const CardRef = useRef(null);
   // const didScroll = useRef(false);
   useLayoutEffect(() => {
@@ -50,7 +50,9 @@ const Card = ({ data, num }) => {
         <section class="card__information">
           <ul>{renderedAchievments}</ul>
           <br />
-          <i className="github icon huge"></i>
+          <a href={link} target="_target">
+            <i className="github icon huge"></i>
+          </a>
         </section>
       </section>
     </section>

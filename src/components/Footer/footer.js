@@ -9,7 +9,9 @@ const Footer = () => {
         <i class="copyright icon big"></i>
       </div>
       <div className="footer__icons">
-        <i className="github icon big"></i>
+        <a href="https://github.com/Atheneum-Innovatrix" target="_target">
+          <i className="github icon big"></i>
+        </a>
         <i className="instagram icon big"></i>
         <i className="envelope icon big"></i>
         <i className="twitter icon big"></i>

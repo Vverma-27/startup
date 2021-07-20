@@ -9,6 +9,7 @@ const Founders = ({ hide }) => {
       "Favourite sport is Football",
       "Has become lethargic since lockdown started",
     ],
+    link: "https://github.com/Vverma-27",
   };
   const dataSuyash = {
     name: "Suyash Handa",
@@ -18,14 +19,16 @@ const Founders = ({ hide }) => {
       "Also plays the guitar and runs a YouTube Channel",
       "Likes project designing, illustrating and Web Development",
     ],
+    link: "https://github.com/Boolean-Autocrat",
   };
   const dataAnanya = {
     name: "Ananya Mukherjee",
     achievments: [
-      "Likes Web Development and playing sports",
-      "Built the business model",
-      "Helped in Web Development",
+      "amateur violin, ukulele, keyboard and kalimba player",
+      "fantasy-fiction addict",
+      "part-time web-developer, python programmer, instrumentalist, swimmer, road cyclist, human and much more which won't fit.",
     ],
+    link: "https://github.com/Mathananya",
   };
   // const dataVivek = {
   //   name: "Vivek",
