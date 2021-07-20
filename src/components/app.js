@@ -1,14 +1,19 @@
-import React, { Suspense, lazy, useEffect } from "react";
+import React, { Suspense, lazy } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Loader from "./Loader/loader";
 import "./responsive.css";
 const App = () => {
-  // const showLoader = () => {
-  //   document.querySelector(".loadingContainer").classList.remove("load--hide");
-  // };
-  // const hideLoader = () => {
-  //   document.querySelector(".loadingContainer").classList.add("load--hide");
-  // };
+  const showLoader = () => {
+    document.querySelector(".loadingContainer").classList.remove("load--hide");
+  };
+  const hideLoader = () => {
+    setTimeout(
+      () =>
+        document.querySelector(".loadingContainer").classList.add("load--hide"),
+      1500
+    );
+    // console.log("yes");
+  };
   // useEffect(() => {
   //   setTimeout(() => hideLoader(), 1000);
   // }, []);
@@ -27,23 +32,35 @@ const App = () => {
         <Suspense fallback={<Loader />}>
           <HeaderFinal />
           <Switch>
-            <Route path={"/"} exact component={() => <Home />} />
-            <Route path={"/founders"} exact component={() => <Founders />} />
+            <Route
+              path={"/"}
+              exact
+              component={() => <Home hide={hideLoader} />}
+            />
+            <Route
+              path={"/founders"}
+              exact
+              component={() => <Founders hide={hideLoader} />}
+            />
             <Route
               path={"/business-Model"}
               exact
-              component={() => <BusinessModel />}
+              component={() => <BusinessModel hide={hideLoader} />}
             />
-            <Route path={"/Vision"} exact component={() => <Vision />} />
+            <Route
+              path={"/Vision"}
+              exact
+              component={() => <Vision hide={hideLoader} />}
+            />
             <Route
               path={"/functionality"}
               exact
-              component={() => <Functionality />}
+              component={() => <Functionality hide={hideLoader} />}
             />
             <Route
               path={"/market-analysis"}
               exact
-              component={() => <MarketAnalysis />}
+              component={() => <MarketAnalysis hide={hideLoader} />}
             />
           </Switch>
           <Footer />

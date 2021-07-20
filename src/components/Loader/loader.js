@@ -1,4 +1,5 @@
 import React from "react";
+import favicon from "../../images/Atheneum__favicon.svg";
 import "./loaderStyle.css";
 
 const Loader = () => {
@@ -6,7 +7,7 @@ const Loader = () => {
     <div>
       <section class="ui segment loadingContainer">
         <section class="ui active dimmer">
-          <section class="ui medium text loader">Loading...</section>
+          <img src={favicon} style={{ height: "25rem" }} />
         </section>
       </section>
     </div>

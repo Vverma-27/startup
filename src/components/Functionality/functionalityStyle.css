@@ -8,7 +8,7 @@
 .content {
   width: 45vw;
 }
-h3 {
+.content h3 {
   color: #00ffff;
   font-style: oblique;
   padding-top: 2rem;

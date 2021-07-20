@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const MarketAnalysis = () => {
+const MarketAnalysis = ({ hide }) => {
+  useEffect(() => hide(), []);
   return (
     <section id="common_container">
       <section

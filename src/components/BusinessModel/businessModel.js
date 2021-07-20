@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./modelStyle.css";
 
-const BusinessPlan = () => {
+const BusinessPlan = ({ hide }) => {
+  useEffect(() => hide(), []);
   return (
     <section id="common_container">
       <section className="model__grid">

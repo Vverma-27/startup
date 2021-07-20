@@ -1,7 +1,7 @@
-import React, { lazy } from "react";
+import React, { lazy, useEffect } from "react";
 import "./founderStyle.css";
 
-const Founders = () => {
+const Founders = ({ hide }) => {
   const dataVihaan = {
     name: "Vihaan Verma",
     achievments: [
@@ -44,6 +44,7 @@ const Founders = () => {
   // };
 
   const Card = lazy(() => import("../Card/card"));
+  useEffect(() => hide(), []);
   return (
     <section className="founders-container" id="common_container">
       <h3

@@ -5,7 +5,7 @@ import Picture3 from "../../images/picture3.webp";
 import Picture4 from "../../images/picture4.webp";
 import "./homeStyle.css";
 
-const Home = () => {
+const Home = ({ hide }) => {
   const slideRef1 = useRef(null),
     slideRef2 = useRef(null),
     slideRef3 = useRef(null),
@@ -25,9 +25,11 @@ const Home = () => {
   let slideIndex = 1;
   useEffect(() => {
     // console.log(slides, dots);
+    let id;
     showSlides(slideIndex);
     counters.forEach((counter) => {
       const updateCount = () => {
+        if (counter.current === null) return;
         const target = parseInt(
           counter.current.getAttribute("data-target"),
           10
@@ -47,7 +49,7 @@ const Home = () => {
           counter.current.innerText = count + inc;
           // Call function every ms
           // updateCount();
-          setTimeout(updateCount, 1);
+          id = setTimeout(updateCount, 1);
         } else {
           counter.current.innerText = target;
         }
@@ -55,12 +57,12 @@ const Home = () => {
 
       updateCount();
     });
+    return () => clearTimeout(id);
     // const id = setInterval(() => plusSlides(1), 4000);
     // return () => {
     //   clearInterval(id);
     // };
   }, []);
-
   function plusSlides(n) {
     showSlides((slideIndex += n));
   }
@@ -118,7 +120,11 @@ const Home = () => {
       <section class="slideshow-container" style={{ padding: "1rem" }}>
         <section ref={slideRef1} class="mySlides fade">
           <section class="numbertext">1 / 4</section>
-          <img src={Picture1} style={{ width: "100%", height: "100%" }} />
+          <img
+            src={Picture1}
+            style={{ width: "100%", height: "100%" }}
+            onLoad={() => hide()}
+          />
           <section class="captiontext">
             Carbon Footprint from Paper Factories
           </section>

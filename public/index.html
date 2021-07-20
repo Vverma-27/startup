@@ -49,6 +49,41 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <style>
+      .loadingContainer {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10000;
+        margin: 0 !important;
+        border: 0 !important;
+        padding: 0 !important;
+        transition: all 0.5s ease;
+        opacity: 1;
+      }
+      .loadingContainer img {
+        animation: loading 1s infinite;
+      }
+      .load--hide {
+        opacity: 0;
+        display: none;
+      }
+      @keyframes loading {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+    <section class="ui segment loadingContainer">
+      <section class="ui active dimmer">
+        <img src="%PUBLIC_URL%/Atheneum__favicon.svg" style="height: 25rem" />
+      </section>
+    </section>
     <div id="root"></div>
     <!--
       This HTML file is a template.

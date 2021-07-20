@@ -8,7 +8,7 @@ import gallery4 from "../../images/gallery4.jpeg";
 import gallery5 from "../../images/gallery5.jpeg";
 import gallery6 from "../../images/gallery6.jpeg";
 
-const Vision = () => {
+const Vision = ({ hide }) => {
   return (
     <section className="vision" id="common_container">
       <section id="heading">
@@ -24,7 +24,12 @@ const Vision = () => {
       <section id="vision-body">
         <section>
           <section id="part1">
-            <img src={image1} alt="boy carrying books" id="image1" />
+            <img
+              src={image1}
+              alt="boy carrying books"
+              id="image1"
+              onLoad={() => hide()}
+            />
             <section class="text text1">
               At<mark> Atheneum </mark>, our goal is to make knowledge
               accessible to all, and to provide a safe and effortless avenue for

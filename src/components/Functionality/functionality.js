@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Ui from "../../images/UI_Atheneum.webp";
 import book from "../../images/Book_img_1.jpg";
 import "./functionalityStyle.css";
 
-const Functionality = () => {
+const Functionality = ({ hide }) => {
   return (
     <section id="common_container">
       <section id="heading">
@@ -130,6 +130,7 @@ const Functionality = () => {
             src={Ui}
             alt="UI Image"
             style={{ width: "100%", marginBottom: "8rem" }}
+            onLoad={() => hide()}
           />
           <img src={book} alt="UI Image" style={{ width: "100%" }} />
         </section>
